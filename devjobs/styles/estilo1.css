@@ -1,0 +1,249 @@
+﻿body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #082038;
+  color: #d2dbe4;
+}
+
+.nombre {
+  color: white;
+}
+
+header {
+  background-color: #082038;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 0px solid #e0e0e0;
+}
+.menu{
+  overflow: hidden;
+}
+
+.logo h1 {
+  color: #1173d4;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a2abe1;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1173d4;
+}
+.acciones{
+    display: flex
+    width: 200px;
+    height: 50px;
+}
+.acciones a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.btn-publicar {
+  background-color: #1173d4;
+  color: white;
+}
+
+.btn-publicar:hover {
+  background-color: #0f61b0;
+}
+
+.btn-login {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-login:hover {
+  background-color: #cacaca;
+}
+
+.inicio {
+  background-image: linear-gradient(rgba(16, 25, 34, 0.7), rgba(16, 25, 34, 0.8)),
+    url("https://pbs.twimg.com/media/EaKVj3eWkAMlwub.jpg:large");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}          
+
+.inicio .contenido {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.inicio h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.inicio p {
+  color: #ddd;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.buscador input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 50px 0 0 50px;
+    }
+.buscador {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 400px;
+      transition: box-shadow 0.3s ease;
+    }
+.buscador:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+.buscador input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.buscador button {
+  background-color: #1173d4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buscador button:hover {
+  background-color: #0f61b0;
+}
+.buscador button:hover {
+      background: #0056b3;
+    }
+
+/* ----- SECCIÓN INFORMACIÓN ----- */
+.por-que {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.por-que h2 {
+  font-size: 2em;
+  color: #1173d4;
+}
+
+.por-que p {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 40px;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.caja {
+  background-color: rgb(13, 51, 110);
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.caja .centro {
+  text-align: center;
+  font-size: 30px;
+}
+.caja h3 {
+  color: #c7def4;
+  margin-bottom: 10px;
+}
+
+/* ----- PIE DE PÁGINA ----- */
+footer {
+  text-align: center;
+  background-color: #082038;
+  border-top: 2px solid #e0e0e0;
+  padding: 20px;
+  color: #97a7e8;
+}
+/* ----- PERFIL FIJO EN LA ESQUINA SUPERIOR DERECHA ----- */
+.perfil {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(8, 32, 56, 0.85);
+  padding: 8px 14px;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.perfil img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1173d4;
+}
+
+.perfil span {
+  color: #d2dbe4;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .perfil {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+  }
+
+  .perfil span {
+    display: none;
+  }
+
+  .perfil img {
+    width: 40px;
+    height: 40px;
+  }
+}

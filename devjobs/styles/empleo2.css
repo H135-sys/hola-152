@@ -1,0 +1,148 @@
+﻿/* === Estilos generales === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #121721;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+header {
+  background-color: #19212D;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo i {
+  color: #5964E0;
+  font-size: 1.5em;
+}
+
+.logo h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #9DAEC2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+/* Usuario */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-cv {
+  background-color: #5964E0;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background-color: #939BF4;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #5964E0;
+}
+
+/* === Contenido principal === */
+.detalle-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: #19212D;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+/* Encabezado */
+.detalle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2C3340;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.detalle-header h2 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.detalle-header .empresa {
+  color: #9DAEC2;
+  font-size: 1em;
+}
+
+.btn-aplicar {
+  background-color: #5964E0;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-aplicar:hover {
+  background-color: #939BF4;
+}
+
+/* Secciones */
+.detalle-section {
+  margin-bottom: 30px;
+}
+
+.detalle-section h3 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.detalle-section ul {
+  padding-left: 20px;
+}
+
+.detalle-section li {
+  margin-bottom: 8px;
+  color: #9DAEC2;
+}
+
+.detalle-section p {
+  color: #9DAEC2;
+}
